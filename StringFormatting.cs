@@ -112,101 +112,158 @@ namespace BeginingCSharp
             ////////////////////////////////////////////////////////
             //Add decision logic to your code
 
-            Random dice = new Random();//create a new instrance of the System.random class and store the reference to that object inthe dice variable
-            Console.WriteLine(dice);
+            // Random dice = new Random();//create a new instrance of the System.random class and store the reference to that object inthe dice variable
+            // Console.WriteLine(dice);
 
-            int roll1 = dice.Next(1,7);//then we call the Random.Next method. (lower bounds, upperbounds)
-            int roll2 = dice.Next(1,7);//picks a number from 1 to 6
-            int roll3 = dice.Next(1,7);
+            // int roll1 = dice.Next(1,7);//then we call the Random.Next method. (lower bounds, upperbounds)
+            // int roll2 = dice.Next(1,7);//picks a number from 1 to 6
+            // int roll3 = dice.Next(1,7);
             
-            Console.WriteLine(roll1);
-            Console.WriteLine(roll2);
-            Console.WriteLine(roll3);
+            // Console.WriteLine(roll1);
+            // Console.WriteLine(roll2);
+            // Console.WriteLine(roll3);
 
-            int total = roll1 + roll2 + roll3;//sum of the dice rolls
-            Console.WriteLine("\n");
-            Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
+            // int total = roll1 + roll2 + roll3;//sum of the dice rolls
+            // Console.WriteLine("\n");
+            // Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
 
-            if ((roll1 == roll2) || (roll1 == roll3) || (roll2 == roll3))//if there is a double
-            {
-                if ((roll1 == roll2) && (roll2 == roll3))//if there is a tripple
-                {
-                    Console.WriteLine("You rolled tripples! +6 bonus to total!");
-                }
-                else //just doubles
-                {
-                Console.WriteLine("You rolled doubles! + 2 bonus to total!");
-                total +=2;
-                Console.WriteLine(total);
-                }
-            }
+            // if ((roll1 == roll2) || (roll1 == roll3) || (roll2 == roll3))//if there is a double
+            // {
+            //     if ((roll1 == roll2) && (roll2 == roll3))//if there is a tripple
+            //     {
+            //         Console.WriteLine("You rolled tripples! +6 bonus to total!");
+            //     }
+            //     else //just doubles
+            //     {
+            //     Console.WriteLine("You rolled doubles! + 2 bonus to total!");
+            //     total +=2;
+            //     Console.WriteLine(total);
+            //     }
+            // }
             
-            string win = "You Win";
-            if(total >= 16)//so I initially wrote this if statement ascending: 7, 10, 16. when the total was 16 it would 
-                //the else if for the macbook would execute. IDKW, but when I rewrote it descending it works.
-            {
-                Console.WriteLine($"{win} a brand new GTR!");
-            }
-            else if(total >= 10)
-            {
-                Console.WriteLine($"{win} a brand new MacBook!");//when you only want one outcome to happen, but you have several possible condtions and results, then
-                //use as many else if statements as you want
-            }
-            else if(total == 7)
-            {
-                Console.WriteLine($"{win} a Cruise Trip to the Bahamas!");
-            }
-            else
-            {
-                Console.WriteLine($"{win} a fluffy kitty!");
-            };
-            string message = "The quick brown fox jumps over the lazy dog.";
-            bool result = message.Contains("fox");
+            // string win = "You Win";
+            // if(total >= 16)//so I initially wrote this if statement ascending: 7, 10, 16. when the total was 16 it would 
+            //     //the else if for the macbook would execute. IDKW, but when I rewrote it descending it works.
+            // {
+            //     Console.WriteLine($"{win} a brand new GTR!");
+            // }
+            // else if(total >= 10)
+            // {
+            //     Console.WriteLine($"{win} a brand new MacBook!");//when you only want one outcome to happen, but you have several possible condtions and results, then
+            //     //use as many else if statements as you want
+            // }
+            // else if(total == 7)
+            // {
+            //     Console.WriteLine($"{win} a Cruise Trip to the Bahamas!");
+            // }
+            // else
+            // {
+            //     Console.WriteLine($"{win} a fluffy kitty!");
+            // };
+            // string message = "The quick brown fox jumps over the lazy dog.";
+            // bool result = message.Contains("fox");
 
-            if (result)
-            {
-                Console.WriteLine("What does the fox say?");
-            }   
-            else
-            {
-                Console.WriteLine("What fox!!");
-            };
+            // if (result)
+            // {
+            //     Console.WriteLine("What does the fox say?");
+            // }   
+            // else
+            // {
+            //     Console.WriteLine("What fox!!");
+            // };
 
-            Console.WriteLine("\n");
+            // Console.WriteLine("\n");
             
-            //Challenge
-            Random random = new Random();
-            int daysUntilExpiration = random.Next(12); Console.WriteLine($"Days Untill: {daysUntilExpiration}");
-            int discountPercentage = 0;
+            // //Challenge
+            // Random random = new Random();
+            // int daysUntilExpiration = random.Next(12); Console.WriteLine($"Days Untill: {daysUntilExpiration}");
+            // int discountPercentage = 0;
 
-            string sub = "Your subscription";
-            if (daysUntilExpiration == 0)
-            {
-                Console.WriteLine($"{sub} has expired.");
-            }
-            else if(daysUntilExpiration == 1)
-            {
-                Console.WriteLine($"{sub} expires within a day! Renew now and save {discountPercentage + 20}%!");
+            // string sub = "Your subscription";
+            // if (daysUntilExpiration == 0)
+            // {
+            //     Console.WriteLine($"{sub} has expired.");
+            // }
+            // else if(daysUntilExpiration == 1)
+            // {
+            //     Console.WriteLine($"{sub} expires within a day! Renew now and save {discountPercentage + 20}%!");
 
-            }
-            else if(daysUntilExpiration <= 5)
-            {
-                Console.WriteLine($"{sub} expires in {daysUntilExpiration} days. Renew now and save {discountPercentage + 10}%!");
-            }
+            // }
+            // else if(daysUntilExpiration <= 5)
+            // {
+            //     Console.WriteLine($"{sub} expires in {daysUntilExpiration} days. Renew now and save {discountPercentage + 10}%!");
+            // }
 
-            if(daysUntilExpiration <= 10 && daysUntilExpiration >= 6)
-            {
-                Console.WriteLine($"{sub} will expire soon. Renew now!");
-            }
-            else if(daysUntilExpiration > 10)
-            {
-                Console.WriteLine(daysUntilExpiration);
-            }
+            // if(daysUntilExpiration <= 10 && daysUntilExpiration >= 6)
+            // {
+            //     Console.WriteLine($"{sub} will expire soon. Renew now!");
+            // }
+            // else if(daysUntilExpiration > 10)
+            // {
+            //     Console.WriteLine(daysUntilExpiration);
+            // }
             //Challenge Solution in notes.
             //so I did this pretty mucy exactly the way the lesson wanted me to do it. I just misinterpreted the instructions
             //branch or nest 3 in the first if statement. I thought I could only use three of the rules in the first if statement
             //I misinterperted the rules a bit. But I knew that I could just use all else ifs.
+            /////////////////////////////////////////////////////////
+
+            ///////////////////////////////////////////////////////////////
+            ///Store and iterate thru sequences of datat using Arrays and the forEach statement
+
+            // string [] fraudulentOrderIDs = new string[3];//declaring an array of strings
+            // Console.WriteLine(fraudulentOrderIDs);
+
+            // fraudulentOrderIDs[0] = "A123";//assigning a value to the array
+            // fraudulentOrderIDs[1] = "B456";
+            // fraudulentOrderIDs[2] = "C789";
+
+            string[] fraudulentOrderIDs = {"A123", "B456", "C789"};
+
+            Console.WriteLine(fraudulentOrderIDs);
+            Console.WriteLine($"first: {fraudulentOrderIDs[0]}");
+            Console.WriteLine($"second: {fraudulentOrderIDs[1]}");
+            Console.WriteLine($"third: {fraudulentOrderIDs[2]}");
+
+            Console.WriteLine($"reasign first: {fraudulentOrderIDs[0] = "F000"}");
+            Console.WriteLine($"There are {fraudulentOrderIDs.Length} fruadulent orders to process.");
+
+            string[] names = {"Lucycan", "Sheng", "Pang"};
+            foreach(string value in names)
+            {
+                Console.WriteLine(value[0]);
+            }
+
+            int[] inventory = {200, 450, 700, 175, 250};
+            int bin = 0;
+            int sum = 0;
+            foreach(int items in inventory)
+            {   
+                sum += items;
+                bin ++;
+                Console.WriteLine($"Bin: {bin} has {items} finished products. Total:{sum}.");
+
+            }
+            Console.WriteLine($"We have {sum} items in the inventory.");
+        
             
+            ///Challenge
+            string[] fakeOrderIds = {"B123", "C234", "A345", "C15", "B177", "G3003", "C235", "B179"}; 
+            Console.WriteLine(fakeOrderIds);
+            foreach(string item in fakeOrderIds)
+            {
+                if(item.StartsWith("B"))
+                {
+                    Console.WriteLine($"B Orders: {item}");
+                }
+                else
+                {
+                    Console.WriteLine(item);
+                };
+            }
         }
+
+
+
     }
 }
