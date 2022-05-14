@@ -1,0 +1,15 @@
+C:\Users\LucycanLy\Csharp\BeginingCSharp\bin\Debug\net6.0\BeginingCSharp.exe
+C:\Users\LucycanLy\Csharp\BeginingCSharp\bin\Debug\net6.0\BeginingCSharp.deps.json
+C:\Users\LucycanLy\Csharp\BeginingCSharp\bin\Debug\net6.0\BeginingCSharp.runtimeconfig.json
+C:\Users\LucycanLy\Csharp\BeginingCSharp\bin\Debug\net6.0\BeginingCSharp.dll
+C:\Users\LucycanLy\Csharp\BeginingCSharp\bin\Debug\net6.0\BeginingCSharp.pdb
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.csproj.AssemblyReference.cache
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.AssemblyInfoInputs.cache
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.AssemblyInfo.cs
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.csproj.CoreCompileInputs.cache
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.dll
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\refint\BeginingCSharp.dll
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.pdb
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\BeginingCSharp.genruntimeconfig.cache
+C:\Users\LucycanLy\Csharp\BeginingCSharp\obj\Debug\net6.0\ref\BeginingCSharp.dll
